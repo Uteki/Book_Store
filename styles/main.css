@@ -1,3 +1,7 @@
 main {
     background-color: gainsboro;
 }
+article {
+    display: flex;
+    justify-content: center;
+}
