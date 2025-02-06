@@ -11,6 +11,9 @@ function renderBooks() {
         selector.innerHTML +=
         bookTemplate(books[i].name, books[i].price, books[i].likes, books[i].liked,
             books[i].author, books[i].publishedYear, books[i].genre, i);
+
+        books[i].liked === true ? document.querySelector(".likey" + i).classList.remove("likeOn") :
+            document.querySelector(".likey" + i).classList.add("likeOn");
     }
 
     localSave();
